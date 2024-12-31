@@ -1,9 +1,9 @@
-##Library management system
+Library management system
 ---
 
 
 
-#Description
+Description
 
 Library management system is simple application designed to  help library managers to manage data in library.
 It allows users to search for books, track  borrowing activities, and receive overdue notifications. 
