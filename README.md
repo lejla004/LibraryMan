@@ -4,6 +4,7 @@ Library management system
 
 
 Description
+---
 
 Library management system is simple application designed to help library managers to manage data in library. It allows librarian to search for books, track borrowing activities, and receive overdue notifications. It enables administrators to manage inventories and user accounts efficiently, reducing human error and improving access to resources through automation.
 This project is designed during the course  Programming Languages  CS305.
@@ -56,10 +57,10 @@ CORE FUNCTIONS
 MODULES
 ---
 
-Book
-Member
-Rental
-Library
+- Book
+- Member
+- Rental
+- Library
 
 Technologies used 
 ---
