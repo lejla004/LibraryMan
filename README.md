@@ -95,6 +95,10 @@ then you should write node fileName.js
 ### IMPORTANT
 ### USERNAME : admin@library.com 
 ### PASSWORD : admin16
+### NOTE :
+"If this program is run for the first time, it will create a new JSON file"libraryfile.json". On subsequent runs, any new data will be added to the existing file."
+
+
 
 
 
