@@ -210,7 +210,7 @@ class Member{
                  // Find the member by member ID
                  const member = this.members.find(m => m.id == memberId);
          
-                 // Debugging: Check if book and member were found
+                 
                  console.log('Found book:', book);
                  console.log('Found member:', member);
          
@@ -286,7 +286,7 @@ class Member{
      returnBook() {
          rl.question("Enter the title of the book you want to return: ", (title) => {
              rl.question("Enter your id: ", (memberId) => {
-                 // Validate the memberId (ensure it's a number and a valid ID)
+                 
                  if (this.numValidation1(memberId)) {
                      const book = this.findBook(title);
                      
@@ -296,10 +296,10 @@ class Member{
                          return;
                      }
      
-                     // Log the book object to check if it's being found correctly
+                     
                      console.log("Found book:", book);
      
-                     // Ensure memberId is a number for comparison, and check if the member exists
+                    
                      const member = this.findMember(Number(memberId)); // Convert memberId to a number
                      if (!member) {
                          console.log(`No member found with the id "${memberId}".`);
@@ -307,13 +307,13 @@ class Member{
                          return;
                      }
      
-                     // Log the member object to check if it's being found correctly
+                    
                      console.log("Found member:", member);
      
-                     // Log rentedItems of the member to verify that the book is listed there
+                    
                      console.log("Rented books by member:", member.rentedItems);
      
-                     // Proceed with returning the book
+                    
                      member.returnBook(book);
                      console.log(`The book "${book.title}" has been returned by member "${member.name}".`);
      
@@ -389,13 +389,13 @@ class Member{
              const data = fs.readFileSync('libraryfile.json');
              const parsedData = JSON.parse(data);
      
-             // Convert books from plain objects to Book instances
+          
              this.books = parsedData.books.map(bookData => new Book(bookData.title, bookData.author, bookData.serialNum));
      
-             // Convert members from plain objects to Member instances
+          
              this.members = parsedData.members.map(memberData => new Member(memberData.id, memberData.name, memberData.address, memberData.phone, memberData.email));
      
-             // Rentals are already plain objects, so you can leave them as they are
+          
              this.rentals = parsedData.rentals;
      
              console.log("Data loaded");
